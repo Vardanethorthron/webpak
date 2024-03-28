@@ -1,0 +1,154 @@
+.brends-block {
+  @media (min-width: $screen-xs) {
+    & {
+      padding-bottom: 24px;
+    }
+  }
+  @media (min-width: $screen-md) {
+    & {
+      padding-bottom: 32px;
+    }
+  }
+  @media (min-width: $screen-lg) {
+    & {
+      padding-bottom: 50px;
+    }
+  }
+}
+
+.section-header {
+  background: linear-gradient(
+    to right,
+    $background-gray 0%,
+    $background-white 98.61%
+  );
+
+  height: 56px;
+  display: flex;
+  align-items: center;
+
+  border-top: 1px solid $link-border;
+
+  &__title {
+    color: $link-gray;
+    font-family: 'TT Lakes', 'Open Sans', 'Arial', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding-left: 32px;
+  }
+}
+
+/*--------------СПИСОК БРЕНДОВ---------------*/
+.brends-list {
+  margin: 0;
+  padding-top: 24px;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 16px;
+}
+
+.brends-list--show-part {
+  /*МОДИФИКАТОР ПОКАЗАТЬ ЧАСТЬ ЭЛЕМЕНТОВ*/
+  height: 160px;
+  overflow: hidden;
+}
+
+.brends-list__item {
+  width: 240px;
+}
+.brends-list__brend {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  box-sizing: border-box;
+  width: 240px;
+  height: 72px;
+  background-color: $background-white;
+
+  border: 1px solid $brend-border;
+  border-radius: 6px;
+}
+
+/*--------------СЕТКА 320---------------*/
+@media (min-width: $screen-xs) {
+  .header__title {
+    padding-left: 16px;
+  }
+
+  .brends-list {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    column-gap: 0;
+  }
+
+  .swiper {
+    height: auto;
+    width: 100%;
+    padding-left: 16px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $pagination-bullet;
+  }
+
+  .brends-list--show-part {
+    /*МОДИФИКАТОР ПОКАЗАТЬ ЧАСТЬ ЭЛЕМЕНТОВ*/
+    height: 160px;
+  }
+}
+
+/*--------------СЕТКА 768---------------*/
+
+@media (min-width: $screen-md) {
+  .header__title {
+    padding-left: 0;
+  }
+  .brends-list {
+    display: flex;
+    column-gap: 24px;
+    padding-left: 0;
+    row-gap: 16px;
+    align-content: start;
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+  .brends-list__brend {
+    width: 224px;
+  }
+  .brends-list__item {
+    width: 224px;
+  }
+  /*.for-pagination {
+    display: none;
+  }*/
+}
+/*--------------СЕТКА 1120---------------*/
+@media (min-width: $screen-lg) {
+  .brends-list {
+    padding-left: 0;
+    column-gap: 32px;
+
+    &__brend {
+      width: 240px;
+    }
+  }
+
+  /* .for-pagination {
+    display: none;
+  }*/
+}

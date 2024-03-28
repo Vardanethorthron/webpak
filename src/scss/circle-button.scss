@@ -1,0 +1,64 @@
+.circle-button {
+  padding: 0;
+  border: none;
+
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    transform: scale(0.9);
+    transition-duration: 0.1s;
+  }
+
+  &--none {
+    // для исчезания кнопки бургера при открытии бокового меню
+    display: none;
+  }
+
+  /*------------Подгружаем иконки кнопок----------*/
+
+  &--burger-img {
+    background: url(../img/burger.svg) no-repeat center center;
+  }
+  &--close-img {
+    background: url(../img/close.svg) no-repeat center center;
+  }
+  &--call-img {
+    background: url(../img/call.svg) no-repeat center center;
+  }
+  &--chat-img {
+    background: url(../img/chat.svg) no-repeat center center;
+  }
+  &--profile-img {
+    background: url(../img/profile.svg) no-repeat center center;
+  }
+  &--search-img {
+    background: url(../img/search.svg) no-repeat center center;
+  }
+  &--arroy-img {
+    background: url(../img/brends/arroy.svg) no-repeat center center;
+  }
+  &--repair-img {
+    background: url(../img/repair.svg) no-repeat center center;
+  }
+  &--checkstatus-img {
+    background: url(../img/checkstatus.svg) no-repeat center center;
+  }
+
+  &--with-text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+    font-weight: 500;
+    color: #1b1c21;
+    align-self: center;
+  }
+
+  &--with-text {
+    display: flex;
+    align-items: center;
+
+    width: 173px;
+    background-position: right 50%;
+  }
+}

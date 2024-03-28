@@ -1,0 +1,68 @@
+.main-footer {
+  height: 129px;
+  border-top: 1px solid $link-border;
+  padding-bottom: 25px;
+
+  color: $link-gray;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+
+  display: flex;
+  flex-direction: column;
+  column-gap: 16px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  /*СЕТКА с 768px и выше*/
+  @media (min-width: $screen-md) {
+    & {
+      height: 65px;
+      padding-left: 24px;
+      padding-right: 24px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__first-text {
+      grid-column: 1;
+      text-align: left;
+    }
+
+    &__second-text {
+      grid-column: 2;
+    }
+
+    &__third-text {
+      grid-column: 3;
+      text-align: right;
+    }
+  }
+
+  /*СЕТКА с 1120px и выше*/
+  @media (min-width: $screen-lg) {
+    & {
+      height: 65px;
+      padding-left: 32px;
+      padding-right: 32px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__first-text {
+      grid-column: 1;
+      text-align: left;
+    }
+
+    &__second-text {
+      grid-column: 2;
+    }
+
+    &__third-text {
+      grid-column: 3;
+      text-align: right;
+    }
+  }
+}

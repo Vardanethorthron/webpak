@@ -1,0 +1,47 @@
+.read-more-button {
+  /*сброс базовых стилей кнопок*/
+  padding: 0;
+  border: none;
+
+  background: url(../img/read-more-close.svg) no-repeat left center;
+  width: 140px;
+  height: 24px;
+  display: block;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $text-main;
+  align-self: center;
+
+  text-align: left;
+  padding-left: 20px;
+}
+.read-more-button--open {
+  background: url(../img/read-more-open.svg) no-repeat left center;
+}
+
+.read-more-button--close {
+  background: url(../img/read-more-close.svg) no-repeat left center;
+}
+
+.read-more-button:hover {
+  color: $button-ping;
+  transition-duration: 0.1s;
+}
+
+.footer__read-more-button {
+  margin-left: 32px;
+
+  @media (min-width: $screen-xs) {
+    & {
+      display: none;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    & {
+      display: block;
+    }
+  }
+}
